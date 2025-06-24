@@ -1,6 +1,6 @@
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
 import {
   ArrowRight,
   TrendingUp,
@@ -13,8 +13,8 @@ import {
   Zap,
   Clock,
   DollarSign,
-} from "lucide-react"
-import Link from "next/link"
+} from "lucide-react";
+import Link from "next/link";
 
 export default function HomePage() {
   return (
@@ -27,24 +27,43 @@ export default function HomePage() {
               <div className="w-8 h-8 bg-gradient-to-r from-green-600 to-blue-600 rounded-lg flex items-center justify-center">
                 <TrendingUp className="w-5 h-5 text-white" />
               </div>
-              <span className="text-xl font-bold text-gray-900">StockVerses</span>
+              <span className="text-xl font-bold text-gray-900">
+                StockVerses
+              </span>
             </div>
             <div className="hidden md:flex items-center space-x-8">
-              <Link href="#how-it-works" className="text-gray-600 hover:text-gray-900 transition-colors">
+              <Link
+                href="#how-it-works"
+                className="text-gray-600 hover:text-gray-900 transition-colors"
+              >
                 How It Works
               </Link>
-              <Link href="#features" className="text-gray-600 hover:text-gray-900 transition-colors">
+              <Link
+                href="#features"
+                className="text-gray-600 hover:text-gray-900 transition-colors"
+              >
                 Features
               </Link>
-              <Link href="#contests" className="text-gray-600 hover:text-gray-900 transition-colors">
+              <Link
+                href="#contests"
+                className="text-gray-600 hover:text-gray-900 transition-colors"
+              >
                 Contests
               </Link>
-              <Link href="/contact" className="text-gray-600 hover:text-gray-900 transition-colors">
+              <Link
+                href="/contact"
+                className="text-gray-600 hover:text-gray-900 transition-colors"
+              >
                 Contact
               </Link>
+               <Link
+              href="https://trade.stockverses.com/login"
+              className="w-full sm:w-auto"
+            >
               <Button className="bg-gradient-to-r from-green-600 to-blue-600 hover:from-green-700 hover:to-blue-700">
                 Start Trading
               </Button>
+              </Link>
             </div>
           </div>
         </div>
@@ -64,20 +83,30 @@ export default function HomePage() {
               </span>
             </h1>
             <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
-              Experience live market trading with virtual money. Trade real stocks with real-time data, compete in
-              contests, and win prizes - all without risking your actual money.
+              Experience live market trading with virtual money. Trade real
+              stocks with real-time data, compete in contests, and win prizes -
+              all without risking your actual money.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <Link
+              href="https://trade.stockverses.com/login"
+              className="w-full sm:w-auto"
+            >
               <Button
                 size="lg"
                 className="bg-gradient-to-r from-green-600 to-blue-600 hover:from-green-700 hover:to-blue-700"
               >
-                Start Trading Now
+                Get Trading Now
                 <ArrowRight className="ml-2 w-5 h-5" />
               </Button>
-              <Button size="lg" variant="outline" className="bg-white text-gray-700 border-gray-300 hover:bg-gray-50">
+              </Link>
+              {/* <Button
+                size="lg"
+                variant="outline"
+                className="bg-white text-gray-700 border-gray-300 hover:bg-gray-50"
+              >
                 View Live Demo
-              </Button>
+              </Button> */}
             </div>
           </div>
         </div>
@@ -95,7 +124,9 @@ export default function HomePage() {
                     </CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <div className="text-2xl font-bold text-green-600">₹1,25,430</div>
+                    <div className="text-2xl font-bold text-green-600">
+                      ₹1,25,430
+                    </div>
                     <div className="text-sm text-green-500 flex items-center">
                       <TrendingUp className="w-3 h-3 mr-1" />
                       +12.5% today
@@ -111,7 +142,9 @@ export default function HomePage() {
                   </CardHeader>
                   <CardContent>
                     <div className="text-2xl font-bold text-blue-600">#3</div>
-                    <div className="text-sm text-gray-500">of 1,247 traders</div>
+                    <div className="text-sm text-gray-500">
+                      of 1,247 traders
+                    </div>
                   </CardContent>
                 </Card>
                 <Card className="border-purple-200">
@@ -131,7 +164,9 @@ export default function HomePage() {
               {/* Live Stock Ticker */}
               <div className="bg-gray-50 rounded-lg p-4">
                 <div className="flex items-center justify-between mb-2">
-                  <h3 className="font-semibold text-gray-900">Live Market Data</h3>
+                  <h3 className="font-semibold text-gray-900">
+                    Live Market Data
+                  </h3>
                   <div className="flex items-center text-green-600">
                     <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse mr-2"></div>
                     <span className="text-sm">Live</span>
@@ -140,19 +175,27 @@ export default function HomePage() {
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm">
                   <div className="flex justify-between">
                     <span className="text-gray-600">RELIANCE</span>
-                    <span className="text-green-600 font-medium">₹2,847.50 ↗</span>
+                    <span className="text-green-600 font-medium">
+                      ₹2,847.50 ↗
+                    </span>
                   </div>
                   <div className="flex justify-between">
                     <span className="text-gray-600">TCS</span>
-                    <span className="text-green-600 font-medium">₹3,456.20 ↗</span>
+                    <span className="text-green-600 font-medium">
+                      ₹3,456.20 ↗
+                    </span>
                   </div>
                   <div className="flex justify-between">
                     <span className="text-gray-600">HDFC</span>
-                    <span className="text-red-600 font-medium">₹1,678.90 ↘</span>
+                    <span className="text-red-600 font-medium">
+                      ₹1,678.90 ↘
+                    </span>
                   </div>
                   <div className="flex justify-between">
                     <span className="text-gray-600">INFY</span>
-                    <span className="text-green-600 font-medium">₹1,789.45 ↗</span>
+                    <span className="text-green-600 font-medium">
+                      ₹1,789.45 ↗
+                    </span>
                   </div>
                 </div>
               </div>
@@ -165,9 +208,12 @@ export default function HomePage() {
       <section id="how-it-works" className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">How StockVerses Works</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              How StockVerses Works
+            </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Start your real-time trading journey in minutes with our simple process
+              Start your real-time trading journey in minutes with our simple
+              process
             </p>
           </div>
 
@@ -176,34 +222,43 @@ export default function HomePage() {
               {
                 step: "01",
                 title: "Create Account",
-                description: "Sign up and get instant access to your trading dashboard with virtual money",
+                description:
+                  "Sign up and get instant access to your trading dashboard with virtual money",
                 icon: Users,
               },
               {
                 step: "02",
                 title: "Real-Time Trading",
-                description: "Trade live stocks with real market data using virtual money - no risk involved",
+                description:
+                  "Trade live stocks with real market data using virtual money - no risk involved",
                 icon: Activity,
               },
               {
                 step: "03",
                 title: "Join Contests",
-                description: "Participate in daily and weekly trading contests with other skilled traders",
+                description:
+                  "Participate in daily and weekly trading contests with other skilled traders",
                 icon: Trophy,
               },
               {
                 step: "04",
                 title: "Win Prizes",
-                description: "Top performers earn real cash prizes and recognition on our leaderboards",
+                description:
+                  "Top performers earn real cash prizes and recognition on our leaderboards",
                 icon: Target,
               },
             ].map((item, index) => (
-              <Card key={index} className="relative border-2 border-gray-100 hover:border-green-200 transition-colors">
+              <Card
+                key={index}
+                className="relative border-2 border-gray-100 hover:border-green-200 transition-colors"
+              >
                 <CardHeader>
                   <div className="w-12 h-12 bg-gradient-to-r from-green-600 to-blue-600 rounded-lg flex items-center justify-center mb-4">
                     <item.icon className="w-6 h-6 text-white" />
                   </div>
-                  <div className="text-sm font-semibold text-green-600 mb-2">STEP {item.step}</div>
+                  <div className="text-sm font-semibold text-green-600 mb-2">
+                    STEP {item.step}
+                  </div>
                   <CardTitle className="text-xl">{item.title}</CardTitle>
                 </CardHeader>
                 <CardContent>
@@ -216,12 +271,18 @@ export default function HomePage() {
       </section>
 
       {/* Key Features */}
-      <section id="features" className="py-20 bg-gradient-to-br from-green-50 to-blue-50">
+      <section
+        id="features"
+        className="py-20 bg-gradient-to-br from-green-50 to-blue-50"
+      >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Why Choose StockVerses?</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              Why Choose StockVerses?
+            </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Experience professional-grade trading simulation with real-time market data and competitive contests
+              Experience professional-grade trading simulation with real-time
+              market data and competitive contests
             </p>
           </div>
 
@@ -229,30 +290,37 @@ export default function HomePage() {
             {[
               {
                 title: "Real-Time Data",
-                description: "Trade with live market prices and real-time stock movements from NSE & BSE",
+                description:
+                  "Trade with live market prices and real-time stock movements from NSE & BSE",
                 icon: Clock,
                 color: "from-green-500 to-emerald-600",
               },
               {
                 title: "Zero Risk Trading",
-                description: "Practice with virtual money - learn and improve without any financial risk",
+                description:
+                  "Practice with virtual money - learn and improve without any financial risk",
                 icon: Shield,
                 color: "from-blue-500 to-cyan-600",
               },
               {
                 title: "Live Market Simulation",
-                description: "Experience authentic trading with real market conditions and price movements",
+                description:
+                  "Experience authentic trading with real market conditions and price movements",
                 icon: BarChart3,
                 color: "from-purple-500 to-violet-600",
               },
               {
                 title: "Cash Prizes",
-                description: "Win real money in trading contests based on your performance and skills",
+                description:
+                  "Win real money in trading contests based on your performance and skills",
                 icon: Trophy,
                 color: "from-yellow-500 to-orange-600",
               },
             ].map((feature, index) => (
-              <Card key={index} className="border-0 shadow-lg hover:shadow-xl transition-shadow bg-white">
+              <Card
+                key={index}
+                className="border-0 shadow-lg hover:shadow-xl transition-shadow bg-white"
+              >
                 <CardHeader>
                   <div
                     className={`w-12 h-12 bg-gradient-to-r ${feature.color} rounded-lg flex items-center justify-center mb-4`}
@@ -275,10 +343,13 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Daily Trading Contests</h2>
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+                Daily Trading Contests
+              </h2>
               <p className="text-lg text-gray-600 mb-8">
-                Compete with skilled traders in our daily contests. Use your trading expertise to climb the leaderboard
-                and win real cash prizes. No real investment required - just skill and strategy.
+                Compete with skilled traders in our daily contests. Use your
+                trading expertise to climb the leaderboard and win real cash
+                prizes. No real investment required - just skill and strategy.
               </p>
 
               <div className="space-y-6">
@@ -287,8 +358,12 @@ export default function HomePage() {
                     <Zap className="w-4 h-4 text-green-600" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-gray-900 mb-1">Daily & Weekly Contests</h3>
-                    <p className="text-gray-600">Multiple contests running every day when markets are open</p>
+                    <h3 className="font-semibold text-gray-900 mb-1">
+                      Daily & Weekly Contests
+                    </h3>
+                    <p className="text-gray-600">
+                      Multiple contests running every day when markets are open
+                    </p>
                   </div>
                 </div>
 
@@ -297,8 +372,13 @@ export default function HomePage() {
                     <Trophy className="w-4 h-4 text-yellow-600" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-gray-900 mb-1">Real Cash Prizes</h3>
-                    <p className="text-gray-600">Top performers win actual money based on their P&L performance</p>
+                    <h3 className="font-semibold text-gray-900 mb-1">
+                      Real Cash Prizes
+                    </h3>
+                    <p className="text-gray-600">
+                      Top performers win actual money based on their P&L
+                      performance
+                    </p>
                   </div>
                 </div>
 
@@ -307,8 +387,12 @@ export default function HomePage() {
                     <BarChart3 className="w-4 h-4 text-blue-600" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-gray-900 mb-1">Live Leaderboards</h3>
-                    <p className="text-gray-600">Track your ranking in real-time throughout the trading day</p>
+                    <h3 className="font-semibold text-gray-900 mb-1">
+                      Live Leaderboards
+                    </h3>
+                    <p className="text-gray-600">
+                      Track your ranking in real-time throughout the trading day
+                    </p>
                   </div>
                 </div>
               </div>
@@ -320,26 +404,62 @@ export default function HomePage() {
             </div>
 
             <div className="bg-gradient-to-br from-green-50 to-blue-50 rounded-2xl p-8">
-              <h3 className="text-xl font-bold text-gray-900 mb-6">Today's Contest Leaderboard</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-6">
+                Today's Contest Leaderboard
+              </h3>
               <div className="space-y-4">
                 {[
-                  { rank: 1, name: "Rajesh Kumar", profit: "+₹15,420", badge: "🥇" },
-                  { rank: 2, name: "Priya Sharma", profit: "+₹12,890", badge: "🥈" },
-                  { rank: 3, name: "Amit Patel", profit: "+₹11,250", badge: "🥉" },
-                  { rank: 4, name: "Sneha Gupta", profit: "+₹9,870", badge: "4th" },
-                  { rank: 5, name: "Vikram Singh", profit: "+₹8,640", badge: "5th" },
+                  {
+                    rank: 1,
+                    name: "Rajesh Kumar",
+                    profit: "+₹15,420",
+                    badge: "🥇",
+                  },
+                  {
+                    rank: 2,
+                    name: "Priya Sharma",
+                    profit: "+₹12,890",
+                    badge: "🥈",
+                  },
+                  {
+                    rank: 3,
+                    name: "Amit Patel",
+                    profit: "+₹11,250",
+                    badge: "🥉",
+                  },
+                  {
+                    rank: 4,
+                    name: "Sneha Gupta",
+                    profit: "+₹9,870",
+                    badge: "4th",
+                  },
+                  {
+                    rank: 5,
+                    name: "Vikram Singh",
+                    profit: "+₹8,640",
+                    badge: "5th",
+                  },
                 ].map((trader) => (
-                  <div key={trader.rank} className="flex items-center justify-between bg-white rounded-lg p-4">
+                  <div
+                    key={trader.rank}
+                    className="flex items-center justify-between bg-white rounded-lg p-4"
+                  >
                     <div className="flex items-center space-x-3">
                       <span className="text-lg">{trader.badge}</span>
-                      <span className="font-medium text-gray-900">{trader.name}</span>
+                      <span className="font-medium text-gray-900">
+                        {trader.name}
+                      </span>
                     </div>
-                    <span className="font-semibold text-green-600">{trader.profit}</span>
+                    <span className="font-semibold text-green-600">
+                      {trader.profit}
+                    </span>
                   </div>
                 ))}
               </div>
               <div className="mt-4 text-center">
-                <p className="text-sm text-gray-600">Contest ends at market close • Prize pool: ₹50,000</p>
+                <p className="text-sm text-gray-600">
+                  Contest ends at market close • Prize pool: ₹50,000
+                </p>
               </div>
             </div>
           </div>
@@ -349,18 +469,29 @@ export default function HomePage() {
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-r from-green-600 to-blue-600">
         <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">Ready to Start Trading?</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
+            Ready to Start Trading?
+          </h2>
           <p className="text-xl text-green-100 mb-8">
-            Join thousands of traders who are already mastering the markets on StockVerses
+            Join thousands of traders who are already mastering the markets on
+            StockVerses
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-white text-green-600 hover:bg-gray-100">
-              Start Trading Now
-              <ArrowRight className="ml-2 w-5 h-5" />
-            </Button>
-            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-green-600">
+            <Link
+              href="https://trade.stockverses.com/login"
+              className="w-full sm:w-auto"
+            >
+              <Button
+                size="lg"
+                className="bg-white text-green-600 hover:bg-gray-100"
+              >
+                Get Start Now
+                <ArrowRight className="ml-2 w-5 h-5" />
+              </Button>
+            </Link>
+            {/* <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-green-600">
               View Live Demo
-            </Button>
+            </Button> */}
           </div>
         </div>
       </section>
@@ -377,8 +508,9 @@ export default function HomePage() {
                 <span className="text-xl font-bold">StockVerses</span>
               </div>
               <p className="text-gray-400 mb-4 max-w-md">
-                The ultimate real-time stock trading simulation platform. Trade with live market data, compete in
-                contests, and win real prizes - all without financial risk.
+                The ultimate real-time stock trading simulation platform. Trade
+                with live market data, compete in contests, and win real prizes
+                - all without financial risk.
               </p>
             </div>
 
@@ -391,17 +523,26 @@ export default function HomePage() {
                   </Link>
                 </li>
                 <li>
-                  <Link href="#how-it-works" className="hover:text-white transition-colors">
+                  <Link
+                    href="#how-it-works"
+                    className="hover:text-white transition-colors"
+                  >
                     How It Works
                   </Link>
                 </li>
                 <li>
-                  <Link href="#features" className="hover:text-white transition-colors">
+                  <Link
+                    href="#features"
+                    className="hover:text-white transition-colors"
+                  >
                     Features
                   </Link>
                 </li>
                 <li>
-                  <Link href="#contests" className="hover:text-white transition-colors">
+                  <Link
+                    href="#contests"
+                    className="hover:text-white transition-colors"
+                  >
                     Contests
                   </Link>
                 </li>
@@ -412,12 +553,18 @@ export default function HomePage() {
               <h3 className="font-semibold mb-4">Legal</h3>
               <ul className="space-y-2 text-gray-400">
                 <li>
-                  <Link href="/terms" className="hover:text-white transition-colors">
+                  <Link
+                    href="/terms"
+                    className="hover:text-white transition-colors"
+                  >
                     Terms & Conditions
                   </Link>
                 </li>
                 <li>
-                  <Link href="/contact" className="hover:text-white transition-colors">
+                  <Link
+                    href="/contact"
+                    className="hover:text-white transition-colors"
+                  >
                     Contact Us
                   </Link>
                 </li>
@@ -431,5 +578,5 @@ export default function HomePage() {
         </div>
       </footer>
     </div>
-  )
+  );
 }
