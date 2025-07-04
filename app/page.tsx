@@ -100,13 +100,21 @@ export default function HomePage() {
                 <ArrowRight className="ml-2 w-5 h-5" />
               </Button>
               </Link>
-              {/* <Button
+              <Link
+              href="https://t.me/stockversesk"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full sm:w-auto"
+            >
+              <Button
                 size="lg"
                 variant="outline"
-                className="bg-white text-gray-700 border-gray-300 hover:bg-gray-50"
+                className="bg-white text-blue-600 border-blue-300 hover:bg-blue-50"
               >
-                View Live Demo
-              </Button> */}
+                Join Telegram Now
+                <ArrowRight className="ml-2 w-5 h-5" />
+              </Button>
+            </Link>
             </div>
           </div>
         </div>
@@ -567,6 +575,23 @@ export default function HomePage() {
                   >
                     Contact Us
                   </Link>
+                </li>
+                <li>
+                   <Link
+              href="https://t.me/stockversesk"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full sm:w-auto"
+            >
+              <Button
+                size="lg"
+                variant="outline"
+                className="bg-white text-blue-600 border-blue-300 hover:bg-blue-50"
+              >
+                Join Telegram Now
+                <ArrowRight className="ml-2 w-5 h-5" />
+              </Button>
+            </Link>
                 </li>
               </ul>
             </div>
