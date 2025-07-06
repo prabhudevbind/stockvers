@@ -104,15 +104,15 @@ export default function HomePage() {
               href="https://t.me/stockversesk"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full sm:w-auto"
+              className="w-full sm:w-auto flex items-center"
             >
               <Button
                 size="lg"
                 variant="outline"
-                className="bg-white text-blue-600 border-blue-300 hover:bg-blue-50"
+                className="bg-white text-blue-600 border-blue-300 hover:bg-blue-50 flex items-center"
               >
-                Join Telegram Now
-                <ArrowRight className="ml-2 w-5 h-5" />
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5 mr-2 text-blue-500"><path d="M21.426 2.594a2.25 2.25 0 0 0-2.37-.36L3.6 9.13c-1.5.63-1.47 2.77.04 3.34l3.7 1.36 1.42 4.54c.41 1.32 2.08 1.53 2.7.32l2.02-3.93 4.13 3.04c1.13.83 2.75.23 3.08-1.13l2.13-8.6a2.25 2.25 0 0 0-.89-2.39ZM8.7 13.6l7.13-6.36c.18-.16.44.07.32.27l-5.1 8.13c-.13.21-.44.17-.5-.07l-1.85-6.01Z"/></svg>
+                Join Private Community
               </Button>
             </Link>
             </div>
@@ -578,20 +578,20 @@ export default function HomePage() {
                 </li>
                 <li>
                    <Link
-              href="https://t.me/stockversesk"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-full sm:w-auto"
-            >
-              <Button
-                size="lg"
-                variant="outline"
-                className="bg-white text-blue-600 border-blue-300 hover:bg-blue-50"
+                href="https://t.me/stockversesk"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full sm:w-auto flex items-center"
               >
-                Join Telegram Now
-                <ArrowRight className="ml-2 w-5 h-5" />
-              </Button>
-            </Link>
+                <Button
+                  size="lg"
+                  variant="outline"
+                  className="bg-white text-blue-600 border-blue-300 hover:bg-blue-50 flex items-center"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5 mr-2 text-blue-500"><path d="M21.426 2.594a2.25 2.25 0 0 0-2.37-.36L3.6 9.13c-1.5.63-1.47 2.77.04 3.34l3.7 1.36 1.42 4.54c.41 1.32 2.08 1.53 2.7.32l2.02-3.93 4.13 3.04c1.13.83 2.75.23 3.08-1.13l2.13-8.6a2.25 2.25 0 0 0-.89-2.39ZM8.7 13.6l7.13-6.36c.18-.16.44.07.32.27l-5.1 8.13c-.13.21-.44.17-.5-.07l-1.85-6.01Z"/></svg>
+                  Join Private Community
+                </Button>
+              </Link>
                 </li>
               </ul>
             </div>
