@@ -87,7 +87,7 @@ export default function HomePage() {
               stocks with real-time data, compete in contests, and win prizes -
               all without risking your actual money.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                 <Link
               href="https://trade.stockverses.com/login"
               className="w-full sm:w-auto"
@@ -104,7 +104,7 @@ export default function HomePage() {
               href="https://t.me/stockversesk"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full sm:w-auto flex items-center"
+              className=" sm:w-auto flex items-center"
             >
               <Button
                 size="lg"
