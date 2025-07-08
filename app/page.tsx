@@ -101,7 +101,7 @@ export default function HomePage() {
               </Button>
               </Link>
               <Link
-              href="https://t.me/stockversesk"
+              href="https://t.me/stockversesteam"
               target="_blank"
               rel="noopener noreferrer"
               className=" sm:w-auto flex items-center"
@@ -578,7 +578,7 @@ export default function HomePage() {
                 </li>
                 <li>
                    <Link
-                href="https://t.me/stockversesk"
+                href="https://t.me/stockversesteam"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full sm:w-auto flex items-center"
