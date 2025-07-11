@@ -73,13 +73,16 @@ export default function ContactPage() {
                 <CardHeader>
                   <CardTitle className="flex items-center text-lg">
                     <Mail className="w-5 h-5 mr-2 text-green-600" />
-                    Email Support
+                    Phone Support
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="text-gray-600 mb-2">Get help with your account or technical issues</p>
-                  <a href="mailto:support@stockverses.com" className="text-green-600 hover:text-green-700 font-medium">
-                    support@stockverses.com
+                  <a href="tel:+917302597556" className="text-green-600 hover:text-green-700 font-medium block">
+                    +91 73025 97556
+                  </a>
+                  <a href="tel:8347232980" className="text-green-600 hover:text-green-700 font-medium block">
+                    8347232980
                   </a>
                 </CardContent>
               </Card>
@@ -93,8 +96,11 @@ export default function ContactPage() {
                 </CardHeader>
                 <CardContent>
                   <p className="text-gray-600 mb-2">Questions about our platform or partnerships</p>
-                  <a href="mailto:hello@stockverses.com" className="text-blue-600 hover:text-blue-700 font-medium">
-                    hello@stockverses.com
+                  <a href="tel:+917302597556" className="text-blue-600 hover:text-blue-700 font-medium block">
+                    +91 73025 97556
+                  </a>
+                  <a href="tel:8347232980" className="text-blue-600 hover:text-blue-700 font-medium block">
+                    8347232980
                   </a>
                 </CardContent>
               </Card>
